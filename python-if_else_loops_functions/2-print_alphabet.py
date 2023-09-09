@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-result = ""
+str = ""
 
 for letter in range(ord('a'), ord('z') + 1):
     if chr(letter) != 'e' and chr(letter) != 'q':
-        result += chr(letter)
+        str += chr(letter)
 
-print(result)
+print(str)
