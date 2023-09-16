@@ -13,5 +13,4 @@ def fizzbuzz():
         if num < 100:
             output += " "
     print(output.strip(), end="")
-    
-print()
+
