@@ -6,4 +6,3 @@ for first in range(10):
             print("{:d}{:d}".format(first, second))
         else:
             print("{:d}{:d}".format(first, second), end=", ")
- 
