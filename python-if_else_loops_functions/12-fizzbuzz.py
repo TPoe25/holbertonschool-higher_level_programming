@@ -12,6 +12,6 @@ def fizzbuzz():
             output += str(num)
         if num < 100:
             output += " "
-    print(output, end="")
+    print(output.strip(), end="")
     
 print()
