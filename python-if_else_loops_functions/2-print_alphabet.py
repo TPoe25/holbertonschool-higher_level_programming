@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-str = ""
+alphabet = ""
 
-for letter in range(ord('a'), ord('z') + 1):
-    if chr(letter) != 'e' and chr(letter) != 'q':
-        str += chr(letter)
-
-print(str)
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) != 'q' and chr(i)!= 'e':
+        alphabet += chr(i)
+        
+print("{}".format(alphabet), end='')
