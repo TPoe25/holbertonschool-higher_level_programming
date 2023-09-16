@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-with open("hidden_4.pyc", "rb") as f:
-    code = f.read()
+if __name__ == "__main__":
+
+    with open("hidden_4.pyc", "rb") as f:
+        code = f.read()
     
 lines = code.split(b"\n")
 

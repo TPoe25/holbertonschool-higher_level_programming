@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import sys
 
-argc = len(sys.argv) - 1
+if __name__ == "__main__":
+
+    argc = len(sys.argv) - 1
 
 if argc < 1:
     print("0 arguments.")
