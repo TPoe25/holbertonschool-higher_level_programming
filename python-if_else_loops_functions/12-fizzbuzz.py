@@ -14,3 +14,4 @@ def fizzbuzz():
             output += " "
     print(output.strip(), end="")
 
+fizzbuzz()
