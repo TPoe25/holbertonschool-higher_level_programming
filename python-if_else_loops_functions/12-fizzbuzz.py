@@ -14,4 +14,4 @@ def fizzbuzz():
             output += " "
     print(output, end="")
     
-fizzbuzz()
+print()
