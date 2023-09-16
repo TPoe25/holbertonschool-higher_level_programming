@@ -12,4 +12,4 @@ for line in lines:
         names.add(name.decode("utf-8"))
         
 for name in sorted(names):
-    print(name) 
+    print(name)
