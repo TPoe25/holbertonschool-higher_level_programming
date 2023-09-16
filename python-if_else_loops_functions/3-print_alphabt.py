@@ -5,4 +5,4 @@ for char in "abcdefghijklmnopqrstuvwxyz":
     if char != 'e' and char != 'q':
         output += char
 
-print(output)
+print("{}".format(output), end='')
