@@ -4,4 +4,4 @@ class Square:
     """
     This is a square class
     """
-my_square = Square()
+    pass
