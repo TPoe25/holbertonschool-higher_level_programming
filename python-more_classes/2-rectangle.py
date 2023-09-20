@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" This defines a rectangle class."""
-
-
+""" This defines a rectangle class """
 class Rectangle:
     """ This defines a rectangle class."""
     def __init__(self, width, height):
