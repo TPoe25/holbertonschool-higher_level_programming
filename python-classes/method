@@ -1,8 +1,0 @@
-#define method inside of class definition
-#method is "just" a fimction which is defined in class
-#first paramater is used a ref to call instance
-#paramater is isially called self
-#self corresponds tothe robot object x
-
-#belongs to class, and defined within a class
-#the first parameter in the def of a method has to be a ref to the instance, which called the method. usually called self
