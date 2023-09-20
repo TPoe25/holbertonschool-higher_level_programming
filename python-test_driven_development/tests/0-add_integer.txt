@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+"""
+Adds two integers together and returns the sum.
+
+Args: 
+    a (int or float): first int or float
+    b (int or float, optional): second int or float. Default to 98.
+
+Returns:
+    int: sum of a and b as integer.
+
+Example:
+    >>> add_integer(1, 2)
+    3
+    >>> add_integer(100, -2)
+    98
+"""

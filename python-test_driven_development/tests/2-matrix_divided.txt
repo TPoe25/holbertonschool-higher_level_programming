@@ -1,0 +1,22 @@
+#!/usr/bin/python
+
+"""
+Divide a matrix by a scalar.
+
+Args: matrix (list): The matrix to divide.
+    div (int or float): The scalar to divide by.
+    
+Returns:
+    list: A new matrix w/ all elements divided by the scalar.
+    
+Raises:
+    TypeError: If div is not an integer or float.
+    ZeroDivisionError: If div is zero.
+Example:
+    >>> matrix = [
+    ...    [1, 2, 3],
+    ...    [4, 5, 6],
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67 1.0], [1.33, 1.67 2.0]]
+"""
