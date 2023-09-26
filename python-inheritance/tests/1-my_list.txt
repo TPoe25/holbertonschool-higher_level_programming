@@ -19,7 +19,7 @@ Test case for my_list module.
 >>> my_list.print_sorted()
 >>> print(my_list)
 
-# Test case 3: Empty list
+# Test case 3: string list
 >>> my_list = MyList()
 >>> my_list.append('does')
 >>> my_list.append('this')
@@ -27,7 +27,7 @@ Test case for my_list module.
 >>> my_list.print_sorted()
 >>> print(my_list)
 
-# Test Case 3: List of strings
+# Test Case 4: new list
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)

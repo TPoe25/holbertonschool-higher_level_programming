@@ -11,7 +11,5 @@ class MyList(list):
         """
         Prints the elements of the list in sorted order
         """
-        print(sorted(self))
-        
-if __name__ == "__main__":
-    pass
+        if issubclass(MyList, list):
+            print(sorted(self))
