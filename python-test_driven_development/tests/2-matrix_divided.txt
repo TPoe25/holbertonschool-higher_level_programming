@@ -1,4 +1,5 @@
-#!/usr/bin/python
+if __name__ == "__main__"
+unittest.main()
 
 """
 Divide a matrix by a scalar.
