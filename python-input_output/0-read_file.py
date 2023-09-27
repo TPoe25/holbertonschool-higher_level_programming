@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+""" defines read_file() function"""
 
 def read_file(filename=""):
+    """ read_file(filename) reads a file and prints it out."""
     try:
         with open(filename, 'r', encoding='utf-8') as file:
             for line in file:

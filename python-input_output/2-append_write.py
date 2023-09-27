@@ -2,7 +2,7 @@
 """ defines a function to read a file """
 
     
-def append_write(filename"", text=""):
+def append_write(filename="", text=""):
     """" Appends text to a file."""
     try:
         with open(filename, 'a', encoding='utf-8') as file:
@@ -13,4 +13,5 @@ def append_write(filename"", text=""):
         return (0)
     
 if __name__ == "__main__":
-    nb_characters_added = append_write(filename="", text="")
+    nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
+    print(nb_characters_added)
