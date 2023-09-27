@@ -1,0 +1,26 @@
+# Test for BaseGeometry class
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+# Create instance of BaseGeometry class
+>>> bg = BaseGeometry()
+
+# Test integer_validator with valid values
+>>> bg.integer_validator("my_int", 12)
+
+# Test integer_validator with non integer
+>>> bg.integer_validator("name", "Brock")
+Traceback (most recent call last):
+    ...
+TypeError: name must be an integer
+
+# Test integer_validator with a negative value
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+    ...
+ValueError: age must be greater than 0
+
+# Test integer_validator with a negative value
+>>> bg.integer_validator("distance", -6)
+Traceback (most recent call last):
+    ...
+ValueError: distance must be greater than 0
