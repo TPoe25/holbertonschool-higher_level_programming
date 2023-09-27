@@ -1,23 +1,19 @@
-"""
 Test case for my_list module.
 
->>> from my_list import MyList
+>>> MyList = __import__("1-my_list").MyList
 
 #Test case 1: list of numbers
 >>> my_list = MyList()
 >>> my_list.append(30)
 >>> my_list.append(1)
 >>> my_list.append(43)
->>> print(my_list)
-[30, 1, 43]
 >>> my_list.print_sorted()
->>> print(my_list)
 [1, 30, 43]
 
 # Test case 2: Empty list
 >>> my_list = MyList()
 >>> my_list.print_sorted()
->>> print(my_list)
+[]
 
 # Test case 3: string list
 >>> my_list = MyList()
@@ -25,7 +21,7 @@ Test case for my_list module.
 >>> my_list.append('this')
 >>> my_list.append('work')
 >>> my_list.print_sorted()
->>> print(my_list)
+['does', 'this', 'work']
 
 # Test Case 4: new list
 >>> my_list = MyList()
@@ -37,6 +33,4 @@ Test case for my_list module.
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
->>> print(my_list)
 [1, 2, 3, 4, 5]
-"""
