@@ -8,7 +8,7 @@ class Square(Rectangle):
     def __init__(self, size):
         """ initializes the square class """
         super().__init__(size, size)
-        
+
     def __str__(self):
         """ returns a string representation of the square class """
         return "[Square] {}/{}".format(self._Rectangle__width, self._Rectangle__height)
