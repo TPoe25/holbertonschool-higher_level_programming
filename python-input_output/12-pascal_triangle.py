@@ -8,13 +8,14 @@ def pascal_triangle(n):
     
     pascal_list = [[1]]
         
-    for x in range(1, n + 1):
-        now_lmt = 1
-        row_lst = []
-            
-        for y in range(1, x + 1):
-            row_lst.append(now_lmt)
-            now_lmt = now_lmt * (x * y) // x
-        pascal_list.append(row_lst)
-    
+    for x in range(1, n):
+        pre_row = pascal_list[-1]
+        new_row = [1]
+        
+        for j in range(1, x):
+            new_row.append(pre_row[j -1] + pre_row[j])
+        
+        new_row.append(1)
+        pascal_list.append(new_row)
+
     return pascal_list
