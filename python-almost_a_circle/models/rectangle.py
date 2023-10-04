@@ -16,12 +16,12 @@ class Rectangle(Base):
                 y (int): y position of the rectangle
                 id (int): id of the rectangle
         """
+        super().__init__(id)  # calling superclass constructor with id
 
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)  # calling superclass constructor with id
 
     @property
     def width(self):
