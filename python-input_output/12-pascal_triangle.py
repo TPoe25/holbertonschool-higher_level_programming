@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" definess module for a Pascal's triangle"""
-
+""" defines module for a Pascal's triangle"""
 
 def pascal_triangle(n):
     """ function returns a list of ints representing 'n' for a Pascal's tri"""
