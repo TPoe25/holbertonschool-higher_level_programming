@@ -29,10 +29,38 @@ class Base:
 
 
     @classmethod
-    def validate_id(cls, id):
-        """ validates the id attribute of a dictionary"""
-        if id is not None:
-            if not isinstance(id, int):
-                raise TypeError("id must be an integer")
-            elif id <= 0:
-                raise ValueError("id must be > 0")
+    def save_to_file(cls, list_objs):
+        filename = cls.__name__ + ".json"
+        obj_list = []
+        if list_objs is not None:
+            obj_list = [obj.to_dictionary() for obj in list_objs]
+        with open(filename, 'w') as file:
+            file.write(json.dumps(obj_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        elif cls.__name__ == "Square":
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, "r") as file:
+                json_str = file.read()
+        except FileNotFoundError:
+            return []
+        
+        json_list = cls.from_json_string(json_str)
+        instances = [cls.create(**d) for d in json_list]
+        return instances
