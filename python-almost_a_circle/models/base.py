@@ -1,12 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-
-class Base:
-    __nb_objects = 0
-    
-    def __init__(self, id=None):
-=======
-""" this is a definition of base class """
 
 
 import json
@@ -21,14 +13,11 @@ class Base:
             Args:
                 id (int): The id of the object
         """
->>>>>>> e9efd062ceff38a8c2054a02c8e16322591119b8
         if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-<<<<<<< HEAD
-=======
     
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -74,4 +63,3 @@ class Base:
         json_list = cls.from_json_string(json_str)
         instances = [cls.create(**d) for d in json_list]
         return instances
->>>>>>> e9efd062ceff38a8c2054a02c8e16322591119b8
