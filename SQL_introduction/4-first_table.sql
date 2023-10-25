@@ -1,5 +1,5 @@
--- Makes the first_table in database
-USE tables;
+-- Use database
+USE hbtn_0c_0;
 
 -- Creates the first_table if it doesnt exist
 CREATE TABLE IF NOT EXISTS first_table (
