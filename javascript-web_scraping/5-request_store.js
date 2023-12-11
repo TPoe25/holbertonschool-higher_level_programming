@@ -14,8 +14,9 @@ request(url, (error, response, body) => {
       if (err) {
         console.error(err);
       } else {
-        console.log(`Body response written to ${filePath}`);
-        console.log(`cat ${filePath}`);
+        console.log(`${filePath}`);
+        console.log(body);
+        console.log(`${body.length}`);
       }
     });
   }
