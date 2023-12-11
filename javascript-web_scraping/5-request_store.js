@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const request = require('request');
-const fs = require('fs');
+import request from 'request';
+import { writeFile, readFileFileSync } from 'fs';
 
 const url = process.argv[2];
 const filePath = process.argv[3];
@@ -10,11 +10,11 @@ request(url, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
-    fs.writeFile(filePath, body, 'utf-8', (err) => {
+    writeFile(filePath, body, 'utf-8', (err) => {
       if (err) {
         console.error(err);
       } else {
-        console.log(`${fs.readFileFileSync(filePath, 'utf-8')}`);
+        console.log(`${readFileFileSync(filePath, 'utf-8')}`);
       }
     });
   }
