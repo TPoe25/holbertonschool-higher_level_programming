@@ -1,4 +1,7 @@
-$(document).ready(function() {
-    var headerElement = $('header');
-    headerElement.css('color', '#FF0000');
+// Import jQuery
+import $ from 'jquery';
+
+$(document).ready(function () {
+  const headerElement = $('header');
+  headerElement.css('color', '#FF0000');
 });

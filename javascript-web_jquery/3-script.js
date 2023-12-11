@@ -1,7 +1,10 @@
-$(document).ready(function() {
-    const redHeader = $('#red_header');
-    redHeader.click(function() {
-        const headerElement = $('header');
-        headerElement.addClass('red');
-    });
+// Import jQuery
+import $ from 'jquery';
+
+$(document).ready(function () {
+  const redHeader = $('#red_header');
+  redHeader.click(function () {
+    const headerElement = $('header');
+    headerElement.addClass('red');
+  });
 });
