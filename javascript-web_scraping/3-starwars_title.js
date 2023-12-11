@@ -11,11 +11,11 @@ const apiUrl = `https://swapi-api.hbtn.io/api/films/${movieId}/`;
 
 // creating GET request to Star Wars API
 request(apiUrl, (error, response, body) => {
-    if (error) {
-        console.error(error);
-    } else {
-        const movieData = JSON.parse(body);
+  if (error) {
+    console.error(error);
+  } else {
+    const movieData = JSON.parse(body);
 
-        console.log(movieData.title);
-    }
+    console.log(movieData.title);
+  }
 });

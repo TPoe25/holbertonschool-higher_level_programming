@@ -10,7 +10,7 @@ const contentToWrite = process.argv[3];
 
 // writes content to files asynchronously and handles errors and prints
 fs.writeFile(filePath, contentToWrite, 'utf-8', (err) => {
-    if (err) {
-        console.error(err);
-    }
+  if (err) {
+    console.error(err);
+  }
 });
