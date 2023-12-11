@@ -13,11 +13,10 @@ request(url, (error, response, body) => {
     fs.writeFile(filePath, body, 'utf-8', (err) => {
       if (err) {
         console.error(err);
-       } else {
+      } else {
         console.log(`Body response written to ${filePath}`);
         console.log(`cat ${filePath}`);
-       }
-    }
-    );
+      }
+    });
   }
 });
