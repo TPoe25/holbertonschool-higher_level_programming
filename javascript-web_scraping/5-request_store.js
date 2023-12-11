@@ -14,9 +14,7 @@ request(url, (error, response, body) => {
       if (err) {
         console.error(err);
       } else {
-        console.log(`${filePath}`);
-        console.log(body);
-        console.log(`${body.length}`);
+        console.log(`${fs.readFileFileSync(filePath, 'utf-8')}`);
       }
     });
   }
